@@ -1,9 +1,70 @@
 * {
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    
 
 }
 
 img {
     width: 100%;
 }
+
+body {
+    background-color: hsl(233, 47%, 7%);
+}
+
+main {
+    width: 90%;
+    margin: 60px auto;
+    text-align: center;
+    background-color: hsl(244, 38%, 16%) ;
+
+}
+.main-image {
+    margin: 0;
+   
+}
+
+.text {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter';
+    font-size: 15px;
+    line-height: 23px;
+    padding: 0 40px;
+    
+}
+
+.title {
+    font-size: 25px;
+    line-height: 30px;
+}
+.title strong {
+    color:  hsl(277, 64%, 61%);
+}
+
+.main-paragraph {
+    color: hsla(0, 0%, 100%, 0.75);
+    
+}
+
+.stats-container {
+    margin-top: 30px;
+}
+
+.stat-title {
+    margin: 0;
+}
+.stat {
+    color: hsla(0, 0%, 100%, 0.6);
+    margin:0;
+    text-transform: uppercase;
+}
+
+.stat-container {
+    margin-bottom: 10px;
+}
+
+footer {
+    display: none;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
