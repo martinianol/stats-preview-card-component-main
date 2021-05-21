@@ -10,6 +10,7 @@ img {
 
 body {
     background-color: hsl(233, 47%, 7%);
+    font-size: 15px;
 }
 
 main {
@@ -17,25 +18,42 @@ main {
     margin: 60px auto;
     text-align: center;
     background-color: hsl(244, 38%, 16%) ;
-
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
 }
 .main-image {
     margin: 0;
+    background-image: url('/images/image-header-mobile.jpg');
+    width: 100%;
+    background-size: cover;
+    height: 30vh; 
+    border-radius: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.transbox {
+    background-color: hsl(277, 64%, 61%);
+    opacity: 0.5;
+    height: 100%;
+    border-radius: inherit;
    
 }
+
 
 .text {
     color: hsl(0, 0%, 100%);
     font-family: 'Inter';
     font-size: 15px;
     line-height: 23px;
-    padding: 0 40px;
+    padding: 10px 40px;
     
 }
 
 .title {
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 1.66rem;
+    line-height: 2rem;
 }
 .title strong {
     color:  hsl(277, 64%, 61%);
@@ -47,7 +65,7 @@ main {
 }
 
 .stats-container {
-    margin-top: 30px;
+    margin-top: 2rem;
 }
 
 .stat-title {
@@ -57,10 +75,11 @@ main {
     color: hsla(0, 0%, 100%, 0.6);
     margin:0;
     text-transform: uppercase;
+    margin: 10px 0px;
 }
 
 .stat-container {
-    margin-bottom: 10px;
+    margin-bottom: 2rem;
 }
 
 footer {
@@ -68,3 +87,59 @@ footer {
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 600px) {
+    body {
+        padding: 16.66vh 0;
+    }
+    
+    main {
+        flex-direction: row-reverse;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .text,
+    .main-image {
+        width: 50%;
+        border-top-left-radius: 0;
+    }
+
+    .main-image {
+        background-image: url('/images/image-header-desktop.jpg');
+        height: 50vh; 
+        border-radius: inherit;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 0px;
+    }
+    .stats-container {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    .text {
+        text-align: left;
+        padding: 0px 6rem 0px 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    .title {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin: 0px;
+    }
+
+    .main-paragraph {
+        line-height: 1.75rem;
+        width: 90%;
+        margin-top: 0;
+        
+    }
+   
+}
