@@ -6,6 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Mars",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinianol/stats-preview-card-component-main.git"
+  },
+  "bugs": {
+    "url": "https://github.com/martinianol/stats-preview-card-component-main/issues"
+  },
+  "homepage": "https://github.com/martinianol/stats-preview-card-component-main#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
